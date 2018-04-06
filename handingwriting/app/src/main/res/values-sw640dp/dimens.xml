@@ -1,0 +1,44 @@
+<resources>
+  <dimen name="txtShadow_layout_height">
+    5.33dp
+  </dimen>
+  <dimen name="llFind_layout_marginTop">
+    17.78dp
+  </dimen>
+  <dimen name="llFind_layout_height">
+    106.67dp
+  </dimen>
+  <dimen name="imgCopy_layout_height">
+    49.78dp
+  </dimen>
+  <dimen name="imgCopy_marginLeft">
+    8.89dp
+  </dimen>
+  <dimen name="ic_line_edit">
+    80.0dp
+  </dimen>
+  <dimen name="edtText_layout_margin">
+    17.78dp
+  </dimen>
+  <dimen name="edtText_layout_height">
+    62.22dp
+  </dimen>
+  <dimen name="btnFind_layout_marginLeft_Right">
+    17.78dp
+  </dimen>
+  <dimen name="btnFind_layout_width">
+    106.67dp
+  </dimen>
+  <dimen name="btnFind_layout_height">
+    71.11dp
+  </dimen>
+  <dimen name="singChar_layout_margin">
+    17.78dp
+  </dimen>
+  <dimen name="llBtnOption_layout_height">
+    88.89dp
+  </dimen>
+  <dimen name="recyGoiY_layout_height">
+    106.67dp
+  </dimen>
+</resources>

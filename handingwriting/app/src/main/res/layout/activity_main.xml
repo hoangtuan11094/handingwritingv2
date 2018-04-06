@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hoangtuan.translatechinesehwriting.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <FrameLayout
+        android:id="@+id/fram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTongThe"/>
+            <ImageButton
+                android:background="@color/colorTongThe"
+
+                android:id="@+id/imgPen"
+                android:layout_marginRight="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_pen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </FrameLayout>
+        <TextView
+            android:background="@drawable/shadow_top_to_dow"
+            android:id="@+id/txtShadow"
+            android:layout_below="@+id/fram"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/txtShadow_layout_height" />
+        <LinearLayout
+            android:layout_marginTop="@dimen/llFind_layout_marginTop"
+            android:id="@+id/llFind"
+            android:weightSum="10"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_below="@+id/txtShadow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/llFind_layout_height">
+            <ImageView
+                android:id="@+id/imgCopy"
+                android:layout_marginLeft="@dimen/imgCopy_marginLeft"
+                android:src="@drawable/ic_copy"
+                android:layout_weight="1"
+                android:layout_width="@dimen/imgCopy_layout_height"
+                android:layout_height="@dimen/imgCopy_layout_height" />
+            <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_margin="@dimen/imgCopy_marginLeft"
+                android:gravity="center"
+                android:background="@drawable/ic_line_edit"
+                android:layout_weight="8"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/ic_line_edit">
+                <com.hoangtuan.translatechinesehwriting.CustomEdittext
+                    android:layout_marginRight="@dimen/edtText_layout_margin"
+                    android:layout_marginLeft="@dimen/edtText_layout_margin"
+                    android:background="#ffffff"
+                    android:id="@+id/edtText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edtText_layout_height"
+                    />
+            </LinearLayout>
+            <Button
+                android:layout_margin="@dimen/imgCopy_marginLeft"
+                android:textAllCaps="false"
+                android:layout_marginRight="@dimen/btnFind_layout_marginLeft_Right"
+                android:background="@drawable/ic_line_button"
+                android:textColor="#ffffff"
+                android:onClick="onFind"
+                android:text="@string/translate"
+                android:id="@+id/btnFind"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/btnFind_layout_marginLeft_Right"
+                android:layout_width="@dimen/btnFind_layout_width"
+                android:layout_height="@dimen/btnFind_layout_height" />
+        </LinearLayout>
+        <com.myscript.atk.scw.SingleCharWidget
+            android:layout_margin="@dimen/singChar_layout_margin"
+            android:background="@drawable/manhinhve"
+            android:id="@+id/singChar"
+            android:layout_above="@+id/llBtnOption"
+            android:layout_below="@+id/llFind"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.myscript.atk.scw.SingleCharWidget>
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/llBtnOption"
+            android:layout_above="@+id/recyGoiY"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/llBtnOption_layout_height">
+            <Button
+                android:layout_margin="@dimen/imgCopy_marginLeft"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:background="@drawable/ic_line_button"
+                android:text="@string/back_space"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onDelete"
+                />
+            <Button
+                android:layout_margin="@dimen/imgCopy_marginLeft"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:background="@drawable/ic_line_button"
+                android:onClick="onSpace"
+                android:text="@string/space"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_margin="@dimen/imgCopy_marginLeft"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:background="@drawable/ic_line_button"
+                android:onClick="onClear"
+                android:text="@string/clear"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/recyGoiY"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recyGoiY_layout_height"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/naviView"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/drawer">
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
+

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Translate Chinese HWriting</string>
+    <string name="home">Home</string>
+    <string name="taidulieu">Dowload Offline Data</string>
+    <string name="danhgiaungdung">Rate App</string>
+    <string name="chiaseungdung">Share App</string>
+    <string name="back_space">Backspace</string>
+    <string name="space">Space</string>
+    <string name="clear">Clear</string>
+    <string name="translate">Translate</string>
+    <string name="them_ung_dung">More Application</string>
+    <string name="about">About US</string>
+    <string name="copy_right">Copyright C 2018</string>
+    <string name="other">Other</string>
+    <string name="thong_bao_internet">Your internet seems to be disabled !!!\\nYou need to enable WiFi or data network to use the app</string>
+    <string name="co">Yes</string>
+    <string name="khong">No</string>
+    <string name="effect_felt_pen">Felt pen</string>
+    <string name="effect_fountain_pen">Fountain pen</string>
+    <string name="effect_calligraphic_brush">Calligraphic brush</string>
+    <string name="effect_calligraphic_quill">Calligraphic quill</string>
+    <string name="effect_qalam">Qalam</string>
+</resources>

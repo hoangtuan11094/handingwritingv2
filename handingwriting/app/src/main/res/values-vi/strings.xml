@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Viết Tay Chữ Trung Quốc</string>
+    <string name="home">Trang Chủ</string>
+    <string name="taidulieu">Tải dữ liệu xem offline</string>
+    <string name="danhgiaungdung">Đánh giá ứng dụng</string>
+    <string name="chiaseungdung">Chia sẻ ứng dụng</string>
+    <string name="back_space">Xóa</string>
+    <string name="space">Dấu cách</string>
+    <string name="clear">Xóa toàn bộ</string>
+    <string name="translate">Dịch</string>
+    <string name="them_ung_dung">Thêm ứng dụng</string>
+    <string name="about">Thông tin về chúng tôi</string>
+    <string name="copy_right">Copyright C 2018</string>
+    <string name="other">Khác</string>
+    <string name="thong_bao_internet">Internet của bạn dường như đã bị tắt! \nBạn cần bật mạng WiFi hoặc dữ liệu để sử dụng ứng dụng</string>
+    <string name="co">Có</string>
+    <string name="khong">Không</string>
+    <string name="effect_felt_pen">Bút nét mờ</string>
+    <string name="effect_fountain_pen">Bút nước</string>
+    <string name="effect_calligraphic_brush">Bút thư pháp cứng</string>
+    <string name="effect_calligraphic_quill">Bút thư pháp mềm</string>
+    <string name="effect_qalam">Bút Qalam</string>
+</resources>

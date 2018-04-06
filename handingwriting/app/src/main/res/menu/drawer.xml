@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group
+    android:checkableBehavior="single"
+    >
+    <item
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        android:checkable="true"
+        android:id="@+id/menuHome"></item>
+    <item
+        android:icon="@drawable/ic_dowload"
+        android:title="@string/taidulieu"
+        android:checkable="true"
+        android:id="@+id/menuTaiDuLieu"></item>
+    <item
+        android:icon="@drawable/ic_add"
+        android:id="@+id/menuThemUngDung"
+        android:title="@string/them_ung_dung"></item>
+    <item
+        android:icon="@drawable/ic_rate"
+        android:title="@string/danhgiaungdung"
+        android:checkable="true"
+        android:id="@+id/menuDanhGia"></item>
+    <item
+        android:icon="@drawable/ic_share"
+        android:title="@string/chiaseungdung"
+        android:checkable="true"
+        android:id="@+id/menuChiaSe"></item>
+</group>
+    <item
+        android:title="@string/other"
+        android:id="@+id/other">
+        <menu>
+            <item
+                android:id="@+id/menuAbout"
+                android:title="@string/about"></item>
+            <item
+                android:id="@+id/menuCopyR"
+                android:title="@string/copy_right"></item>
+        </menu>
+    </item>
+</menu>
