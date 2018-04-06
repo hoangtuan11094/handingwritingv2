@@ -66,11 +66,11 @@ public class DownloadActivity extends AppCompatActivity {
         switch (id) {
             case progress_bar_type:
                 pDialog = new ProgressDialog(this);
-                pDialog.setMessage("Downloading file. Please wait...");
+                pDialog.setMessage(getResources().getString(R.string.messe_dialog_download));
                 pDialog.setIndeterminate(false);
                 pDialog.setMax(100);
                 pDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-                pDialog.setCancelable(true);
+                pDialog.setCancelable(false);
                 pDialog.show();
                 return pDialog;
             default:
@@ -107,8 +107,11 @@ public class DownloadActivity extends AppCompatActivity {
             try {
                 URL url = new URL(aurl[0]);
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-                connection.setRequestProperty("Accept-Encoding", "identity"); // <--- Add this line
-                connection.setRequestMethod("GET");
+                connection.setRequestProperty("Accept-Encoding", "identity");
+                connection.connect();
+
+                long contentLength = Long.parseLong(connection.getHeaderField("Content-Length"));
+                Log.d("Log", String.valueOf(contentLength));
                 int lenghtOfFile = connection.getContentLength();
                 Log.d(TAG, "Length of the file: " + lenghtOfFile);
 
@@ -152,15 +155,16 @@ public class DownloadActivity extends AppCompatActivity {
 
     private void downloadAndUnzipContent() {
 //        String url = "http://45.77.45.115:1234/AppNhandangChuvietTiengTrung/conf.zip";
+        String urlTest = "http://45.77.45.115:1234/AppWallpaper/AnhTinhYeuFinal.zip";
         String url = "http://upfile.vn/download/guest/AbrCNCjmFCBC/-dLm6rBmACBC/TxGUE_aoyHGc/tQGKnZOo7WGU/fd90f26e1a4fa532d/1522987534/4182995de62252b5e87354e2bd258c9d486ea1175b7413342/hvt.zip";
         Download download = new Download("/sdcard/content.zip", this, new PostDownload() {
             @Override
             public void downloadDone(File file) {
 
                 Decompress unzip = new Decompress(DownloadActivity.this, file);
-                pDialog.setMessage("Bắt đầu giải nén");
+                pDialog.setMessage(getResources().getString(R.string.bat_dau_giai_nen));
                 unzip.unzip();
-                pDialog.setMessage("Giải nén thành công");
+                pDialog.setMessage(getResources().getString(R.string.ket_thuc_giai_nen));
 
 
             }

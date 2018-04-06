@@ -128,16 +128,8 @@ public class MainActivity extends Activity implements
                         Toast.makeText(MainActivity.this, item.getTitle(), Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.menuThemUngDung:
-                        Toast.makeText(MainActivity.this, item.getTitle(), Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.menuChiaSe:
-                        Toast.makeText(MainActivity.this, item.getTitle(), Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.menuDanhGia:
-                        Uri uri = Uri.parse("market://details?id=com.diffcat.facedance2");
+                        Uri uri = Uri.parse("market://details?id=com.hdpsolution.demngayyeu");
                         Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
-                        // To count with Play market backstack, After pressing back button,
-                        // to taken back to our application, we need to add following flags to intent.
                         goToMarket.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
                                 Intent.FLAG_ACTIVITY_NEW_DOCUMENT |
                                 Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
@@ -145,14 +137,29 @@ public class MainActivity extends Activity implements
                             startActivity(goToMarket);
                         } catch (ActivityNotFoundException e) {
                             startActivity(new Intent(Intent.ACTION_VIEW,
-                                    Uri.parse("https://play.google.com/store/apps/details?id=com.diffcat.facedance2"
-
-                                    )));
+                                    Uri.parse(" https://play.google.com/store/apps/details?id=com.hdpsolution.demngayyeu")));
+                        }
+                        break;
+                    case R.id.menuChiaSe:
+                        break;
+                    case R.id.menuDanhGia:
+                        Uri uri1 = Uri.parse("market://details?id=com.diffcat.facedance2");
+                        Intent goToMarket1 = new Intent(Intent.ACTION_VIEW, uri1);
+                        goToMarket1.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
+                                Intent.FLAG_ACTIVITY_NEW_DOCUMENT |
+                                Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+                        try {
+                            startActivity(goToMarket1);
+                        } catch (ActivityNotFoundException e) {
+                            startActivity(new Intent(Intent.ACTION_VIEW,
+                                    Uri.parse("https://play.google.com/store/apps/details?id=com.diffcat.facedance2")));
                         }
                         Toast.makeText(MainActivity.this, item.getTitle(), Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.menuAbout:
-                        Toast.makeText(MainActivity.this, item.getTitle(), Toast.LENGTH_SHORT).show();
+
+                            startActivity(new Intent(Intent.ACTION_VIEW,
+                                    Uri.parse("https://play.google.com/store/apps/dev?id=8500255335661561211")));
                         break;
                     case R.id.menuCopyR:
                         Toast.makeText(MainActivity.this, item.getTitle(), Toast.LENGTH_SHORT).show();
@@ -352,12 +359,6 @@ public class MainActivity extends Activity implements
                 return true;
             }
         });
-
         popupMenu.show();
     }
-
-
-
-
-
 }

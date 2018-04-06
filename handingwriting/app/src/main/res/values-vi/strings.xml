@@ -21,4 +21,9 @@
     <string name="effect_calligraphic_brush">Bút thư pháp cứng</string>
     <string name="effect_calligraphic_quill">Bút thư pháp mềm</string>
     <string name="effect_qalam">Bút Qalam</string>
+    <string name="messe_dialog_download">Đang cập nhập dữ liệu... Vui lòng chờ..!</string>
+    <string name="bat_dau_giai_nen">Bắt đầu giải nén...</string>
+    <string name="ket_thuc_giai_nen">Giải nén thành công!</string>
+    <string name="mat_ket_noi">Bạn vừa bị mất kết nối mạng. \nVui lòng thử lại!</string>
+    <string name="thu_lai">Thử lại</string>
 </resources>

@@ -9,28 +9,28 @@
     android:background="@color/colorTongThe"
     tools:context="com.hoangtuan.translatechinesehwriting.DownloadActivity">
 <ImageView
-    android:layout_marginTop="50dp"
+    android:layout_marginTop="@dimen/activity_dowload_img_layout_marginTop"
     android:src="@drawable/ic_logo"
-    android:layout_width="128dp"
-    android:layout_height="128dp" />
+    android:layout_width="@dimen/ic_logo_layout_width_height"
+    android:layout_height="@dimen/ic_logo_layout_width_height" />
     <LinearLayout
         android:visibility="gone"
         android:id="@+id/llThuLai"
         android:gravity="center"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="85dp">
+        android:layout_height="@dimen/activity_dowload_img_LinearLayout_height">
         <TextView
             android:textColor="#ffffff"
             android:textAlignment="center"
-            android:text="Bạn vừa bị mất kết nối mạng. \nVui lòng thử lại!"
+            android:text="@string/mat_ket_noi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <Button
             android:id="@+id/btnThuLai"
             android:textAllCaps="false"
-            android:text="Thử lại"
-            android:layout_marginTop="10dp"
+            android:text="@string/thu_lai"
+            android:layout_marginTop="@dimen/activity_dowload_btn_layout_marginTop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>

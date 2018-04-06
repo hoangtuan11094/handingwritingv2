@@ -41,4 +41,37 @@
   <dimen name="recyGoiY_layout_height">
     80.0dp
   </dimen>
+  <dimen name="ic_logo_layout_width_height">
+    170.67dp
+  </dimen>
+  <dimen name="ic_logo_layout_marginBottom">
+    66.67dp
+  </dimen>
+  <dimen name="activity_dowload_img_layout_marginTop">
+    66.67dp
+  </dimen>
+  <dimen name="activity_dowload_img_LinearLayout_height">
+    113.33dp
+  </dimen>
+  <dimen name="activity_dowload_btn_layout_marginTop">
+    13.33dp
+  </dimen>
+  <dimen name="header_layout_height">
+    200.0dp
+  </dimen>
+  <dimen name="header_ic_logo_height_w">
+    133.33dp
+  </dimen>
+  <dimen name="item_goiy_layout_marginBottom_Top">
+    13.33dp
+  </dimen>
+  <dimen name="item_goiy_layout_marginR_L">
+    6.67dp
+  </dimen>
+  <dimen name="ic_clear_layout_height">
+    53.33dp
+  </dimen>
+  <dimen name="ic_clear_layout_marginLeft">
+    13.33dp
+  </dimen>
 </resources>

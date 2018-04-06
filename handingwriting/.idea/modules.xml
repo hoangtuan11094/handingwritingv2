@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://E:\GitDow\handingwriting\TranslateChineseHWriting.iml" filepath="E:\GitDow\handingwriting\TranslateChineseHWriting.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://F:\TestGit\handingwritingv2\handingwriting\app\app.iml" filepath="F:\TestGit\handingwritingv2\handingwriting\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/handingwriting.iml" filepath="$PROJECT_DIR$/handingwriting.iml" />
+      <module fileurl="file://F:\TestGit\handingwritingv2\handingwriting\handingwriting.iml" filepath="F:\TestGit\handingwritingv2\handingwriting\handingwriting.iml" />
     </modules>
   </component>
 </project>

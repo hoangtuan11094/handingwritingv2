@@ -20,4 +20,9 @@
     <string name="effect_calligraphic_brush">Calligraphic brush</string>
     <string name="effect_calligraphic_quill">Calligraphic quill</string>
     <string name="effect_qalam">Qalam</string>
+    <string name="messe_dialog_download">Updating data... Please wait...!</string>
+    <string name="bat_dau_giai_nen">Start extracting</string>
+    <string name="ket_thuc_giai_nen">Uncompressed successfully!</string>
+    <string name="mat_ket_noi">You just lost your network connection. \ nPlease try again!</string>
+    <string name="thu_lai">Retry</string>
 </resources>
